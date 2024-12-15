@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information on helicopter</title>
+  <link rel="stylesheet" href="styles.css">
+<h1 style="text-align: center;">Helicopters</h1>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab active" data-target="tab1">Images</div>
+    <div class="tab" data-target="tab2">Information</div>
+    <div class="tab" data-target="tab3">About us</div>
+  </div>
+  <div class="tab-content active" id="tab1">
+    <div id="parent">
+      <figure style="display: inline-block; text-align:center; font-size:25px;">
+        <a href="#halicopter" onclick="showTab('tab2')">
+           <img src="https://www.sheffield.com/wp-content/uploads/Untitled-design-2023-02-27T095948.945.png" style="width: 400px; height: 2auto; border: 1px solid #000;">
+        </a>
+        <figcaption>Helicopter</figcaption>
+      </figure>
+    </div>
+    <div id="parent">
+      <figure style="display: inline-block; text-align: center;">
+        <a href="#MainRotor" onclick="showTab('tab2')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Admiral_Vinogradov_-_Ka-27_Helicopter_Main_Rotor_Hub_Mechanism.jpg" alt="Main rotor" style="width: 350px; height: 200px; border: 1px solid #000;">
+        </a>
+        <figcaption>Main rotor</figcaption>
+      </figure>
+      <figure style="display: inline-block; text-align: center;">
+        <a href="#Engine" onclick="showTab('tab2')">
+          <img src="https://helicoptermaintenancemagazine.com/sites/default/files/catalog_images/2013_10/2013_10_Page_18_Image_0001.jpg" alt="Engine" style="width: 350px; height: 200px; border: 1px solid #000;">
+        </a>
+        <figcaption>Engine</figcaption>
+      </figure>
+      <figure style="display: inline-block; text-align: center;">
+        <a href="#TR" onclick="showTab('tab2')">
+          <img src="https://www.heliflieger.com/wp-content/uploads/2018/06/hubschrauber-blog-heckrotor-r44-robinson.jpg" alt="Tail rotor" style="width: 350px; height: 200px; border: 1px solid #000;">
+        </a>
+        <figcaption>Tail rotor</figcaption>
+      </figure>
+    </div>
+    <div id="parent">
+      <figure style="display: inline-block; text-align: center;">
+        <a href="#Blade" onclick="showTab('tab2')">
+          <img src="https://media.istockphoto.com/id/1179860389/photo/helicopter.jpg?s=612x612&w=0&k=20&c=iapVEeEK14a_5yOkY3B6kLgwwDDKVHTDLKH4Ug_0CVg=" alt="Blade" style="width: 350px; height: 200px; border: 1px solid #000;">
+        </a>
+        <figcaption>Blade</figcaption>
+      </figure>
+      <figure style="display: inline-block; text-align: center;">
+        <a href="#CK" onclick="showTab('tab2')">
+          <img src="https://live.staticflickr.com/3316/3558873128_ee8745910a_b.jpg" alt="Cockpit" style="width: 350px; height: 200px; border: 1px solid #000;">
+        </a>
+        <figcaption>Cockpit</figcaption>
+      </figure>
+      <figure style="display: inline-block; text-align: center;">
+        <a href="#Ls" onclick="showTab('tab2')">
+          <img src="https://media.istockphoto.com/id/1212883627/photo/metallic-skid-of-a-grounded-helicopter.jpg?s=612x612&w=0&k=20&c=0AHI1cM9sTy21VZ4ECfTMf50_wp_nmiZHaYFDZOCkSw=" alt="Landing skid" style="width: 350px; height: 200px; border: 1px solid #000;">
+        </a>
+        <figcaption>Landing skid</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="tab-content" id="tab2">
+    <h1>Information</h1>
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('Helicopterdropdown')"><h2 id="halicopter">Helicopter</h2></button>
+      <div class="dropdown-content" id="Helicopterdropdown">
+    <p>A helicopter is a highly sophisticated rotary-wing aircraft designed for vertical takeoff, hovering, and landing. This unique ability allows helicopters to operate in confined spaces and challenging environments, making them indispensable in both military and civilian aviation sectors. Their distinctive design, featuring rotating main rotors for lift and anti-torque systems for stability, provides exceptional maneuverability that fixed-wing aircraft cannot match.</p>
+    <img src="https://www.researchgate.net/profile/Alexandre-C-B-Ramos/publication/281503119/figure/fig2/AS:574788801437696@1514051737145/The-helicopter-structure.png" alt="Helicopter" style="width: 400px; height: auto; border: 1px solid #000;">
+    <div class="dropdown">
+        <!--anon did alot:) but no credit:(-->
+      <button class="dropdown-button" onclick="toggleDropdown('historyDropdown')">History</button>
+      <div class="dropdown-content" id="historyDropdown">
+        <p>The concept of vertical flight has captivated inventors for centuries. Leonardo da Vincis 15th-century sketches of a helical air screw laid the groundwork for future advancements in flight. However, it was not until the 20th century that vertical flight became a practical reality.</p>
+      </div>
+    </div>   
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('evolutionDropdown')">Evolution</button>
+      <div class="dropdown-content" id="evolutionDropdown">
+        <ul type="disc">
+        <li>1939: Igor Sikorskys VS-300 became the first successful, fully operational helicopter, demonstrating the feasibility of vertical flight.</li>
+        <li>1940s-50s: Helicopters quickly gained military significance during World War II and the Korean War, where their ability to perform rapid troop deployments, medevac missions, and search and rescue operations proved invaluable.</li>
+        <li>1960s-70s: The Vietnam War accelerated the development of helicopters, with models such as the Bell UH-1 Huey and Sikorsky CH-53 becoming symbols of military utility. During this period, helicopter technology saw significant improvements in power, range, and mission versatility.</li>
+        <li>1980s-Present: Modern helicopters, including the Sikorsky Black Hawk and Eurocopter EC145, have become highly specialized for various military, industrial, and civilian roles. Technological advancements in materials, avionics, and fuel efficiency continue to enhance the performance and utility of rotary-wing aircraft.</li>
+        </ul>
+      </div>
+    </div>   
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('UsesDropdown')">Uses</button>
+      <div class="dropdown-content" id="UsesDropdown">
+        <p>Helicopters serve critical functions across several sectors, owing to their unique capabilities:</p>
+        <ul type="disc">
+          <li>Emergency and Rescue Operations: Helicopters are essential in search and rescue missions, medical evacuations, and disaster response, providing rapid access to areas that are otherwise inaccessible.</li>
+          <li>Military: Used extensively for reconnaissance, troop transport, and combat support, helicopters have become integral to modern military operations.</li>
+          <li>Commercial and Industrial Applications: Helicopters are employed in a wide range of functions, including aerial photography, tourism, infrastructure inspections, and heavy-lift construction operations.</li>
+          <li>Urban Air Mobility: With the growing interest in urban air taxis, helicopters are being increasingly utilized for VIP transport and commuting within congested urban environments.</li>
+        </ul>
+      </div>
+    </div>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('ModelsDropdown')">Models</button>
+        <div class="dropdown-content" id="ModelsDropdown">
+          <p>Several helicopters have become iconic in their respective fields, showcasing the evolution and refinement of rotary-wing aircraft:</p>
+          <ul type="disc">
+            <li>Bell UH-1 Huey: Known for its extensive service during the Vietnam War, the Huey remains a symbol of military utility.</li>
+            <li>Sikorsky UH-60 Black Hawk: A versatile and durable military helicopter, the Black Hawk is widely regarded for its exceptional performance in both tactical and logistical roles.</li>
+            <li>Robinson R44: One of the most widely used civilian helicopters, the R44 is renowned for its reliability, affordability, and role in pilot training and general aviation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('MainRotorDropdown')"><h3 id="MainRotor">Main Rotor</h3></button>
+    <div class="dropdown-content" id="MainRotorDropdown">
+    <p>The main rotor system is a critical component of a helicopter, providing the necessary lift and propulsion for flight.</p>
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('ConsistsMRDropdown')">Consists</button>
+        <div class="dropdown-content" id="ConsistsMRDropdown">
+          <!--didn't even have responsiveness so didn't work on phones-->
+            <img src="https://www.researchgate.net/profile/Akeel-Wannas/publication/303881525/figure/fig2/AS:670015258902540@1536755494926/Figure-12-Mechanical-view-of-the-rotor-shaft-main-rotor-assembly.png" alt="Main rotor" style="width: 350px; height: auto;">
+            <ul type="disc">
+                <li>Multiple rotor blades, typically manufactured from composite materials or metal alloys</li>
+                <li> A central hub, connecting the rotor blades to the mast</li>
+                <li>A mast, serving as the vertical axis of rotation</li>
+                <li>Pitch links, enabling control of the rotor blade angle</li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('FunctionMRDropdown')">Function</button>
+        <div class="dropdown-content" id="FunctionMRDropdown">
+            <ul type="disc">
+                <li>Rotor diameter: influences lift generation and overall efficiency</li>
+                <li>Rotor rotational speed (RPM): impacts lift production and aircraft performance</li>
+                <li>Blade angle: affects lift generation and control</li>
+                <li>Disk loading: the ratio of aircraft weight to rotor disk area, influencing efficiency and stability.</li>
+            </ul>
+        </div>
+    </div>
+   </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('EngineDropdown')"><h3 id="Engine">Engine</h3></button>
+    <div class="dropdown-content" id="EngineDropdown">
+        <img src="https://www.chinook-helicopter.com/standards/areas/Drawings/Engine/L-712/L-712_Engine_Cross_Section_1_Bit_700x531.jpg" alt="Landing skid" style="width: 300px; height: auto; border: 1px solid #000;">
+        <ul type="disc">
+            <li>Rotor diameter: influences lift generation and overall efficiency</li>
+            <li>Rotor rotational speed (RPM): impacts lift production and aircraft performance</li>
+            <li>Blade angle: affects lift generation and control</li>
+            <li>Disk loading: the ratio of aircraft weight to rotor disk area, influencing efficiency and stability.</li>
+        </ul>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('TailRotorDropdown')"><h3 id="TR">Tail Rotor</h3></button>
+    <div class="dropdown-content" id="TailRotorDropdown">
+      <p>The tail rotor is a critical component of a helicopter, responsible for providing directional control and stability. Its primary function is to counteract the torque created by the main rotor, allowing the helicopter to maintain a steady heading.</p>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('KeyCTRDropdown')">Characteristics</button>
+        <div class="dropdown-content" id="KeyCTRDropdown">  
+      <ul type="disc">
+            <li>Counter-torque: The tail rotor produces a force that opposes the torque generated by the main rotor.</li>
+            <li>Directional control: The tail rotor enables the helicopter to yaw left or right.</li>
+            <li> Stability: The tail rotor helps maintain the helicopter's stability and prevents unwanted rotation.</li>
+     </ul>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('TypesTRDropdown')">Different types</button>
+    <div class="dropdown-content" id="TypesTRDropdown">
+        <ul type="disc">
+            <li>Conventional tail rotor: A traditional tail rotor with a vertical axis of rotation.</li>
+            <li>Fenestron tail rotor: A ducted tail rotor, also known as a "fan-in-fin," which provides improved safety and reduced noise.</li>
+            <li>NOTAR (No Tail Rotor): A system that uses a fan inside the tailboom to provide directional control, eliminating the need for a traditional tail rotor.</li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('BladeDropdown')"><h3 id="Blade">Blade</h3></button>
+    <div class="dropdown-content" id="BladeDropdown">
+        <p>A helicopter blade, also known as a rotor blade, is a critical component of a helicopter's rotor system. Its primary function is to produce lift and propulsion.</p>
+        <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('BladeCsDropdown')">Characteristics</button>
+        <div class="dropdown-content" id="BladeCsDropdown">
+          <ul type="disc">
+            <li>Airfoil shape: The curved upper surface of the blade deflects air downward, creating a pressure difference that generates lift.</li>
+            <li>Angle of attack: The blade's angle relative to the oncoming airflow determines the amount of lift produced.</li>
+            <li>Chord length: The distance from the leading edge to the trailing edge of the blade affects its lift-producing capabilities.</li>
+            <li>Tip shape: The shape of the blade tip influences its aerodynamic performance and noise reduction.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown('BladeTypeDropdown')">Different types</button>
+        <div class="dropdown-content" id="BladeTypeDropdown">
+          <ul type="disc">
+        <li>Symmetrical blades: Used in most helicopters, these blades have a symmetrical airfoil shape.</li>
+        <li>Asymmetrical blades: Used in some helicopters, these blades have an asymmetrical airfoil shape to improve lift and reduce vibration.</li>
+        <li>Composite blades: Made from composite materials, these blades offer improved strength, durability, and reduced weight.</li>
+            </ul>
+        </div>
+        </div>
+</div>
+</div>
+<div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('LandingSkidDropdown')"><h3 id="Ls">Landing Skid</h3></button>
+    <div class="dropdown-content" id="LandingSkidDropdown">
+        <p>The landing skid is a vital structural element of a helicopter, providing a stable and durable platform for landing and takeoff operations.</p>
+        <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('LSCsDropdown')">Key Characteristics</button>
+        <div class="dropdown-content" id="LSCsDropdown">
+          <ul type="disc">
+            <li>Structural integrity to withstand landing impacts.</li>
+            <li>Shock absorption to reduce stress on the airframe.</li>
+            <li>Adequate ground clearance to prevent damage from obstacles.</li>
+            <li>Durability to withstand repeated use and harsh environments.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown('LSTypeDropdown')">Different types</button>
+        <div class="dropdown-content" id="LSTypeDropdown">
+          <ul type="disc">
+        <li>Fixed Skids: Permanently attached to the airframe.</li>
+        <li>Retractable Skids: Capable of being retracted to reduce drag and improve aerodynamics.</li>
+        <li>Floating Skids: Designed to flex slightly upon impact, reducing stress on the airframe.</li>
+            </ul>
+        </div>
+        </div>
+</div>
+</div>
+<div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('CockpitDropdown')"><h3 id="CK">Cockpit</h3></button>
+    <div class="dropdown-content" id="CockpitDropdown">
+        <p>The cockpit is the central control center of a helicopter, housing the instruments, controls, and displays necessary for safe and efficient flight. A typical helicopter cockpit features:.</p>
+        <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('IPCPDropdown')">Instrument Panel</button>
+        <div class="dropdown-content" id="IPCPDropdown">
+          <ul type="disc">
+            <li>Primary Flight Display (PFD): Shows critical flight information, such as altitude, airspeed, and heading.</li>
+            <li>Multifunction Display (MFD): Displays navigation, engine, and system data.</li>
+            <li>Attitude Indicator: Displays the helicopter's attitude and orientation.</li>
+            <li>Altimeter: Shows the helicopter's altitude above sea level.</li>
+            <li>Airspeed Indicator: Displays the helicopter's airspeed.</li>
+          </ul>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown('CCKDropdown')">Controls</button>
+        <div class="dropdown-content" id="CCKDropdown">
+          <ul type="disc">
+            <li>Cyclic Stick: Controls the helicopter's pitch, roll, and yaw.</li>
+            <li>Collective Stick: Controls the helicopter's altitude and climb/descent rate.</li>
+            <li>Throttle: Controls the engine's power output.</li>
+            <li>Rudder Pedals: Controls the helicopter's yaw.</li>
+            </ul>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown('AFCKDropdown')">Additional features</button>
+        <div class="dropdown-content" id="AFCKDropdown">
+          <ul type="disc">
+            <li>Autopilot System: Automates certain flight functions, such as altitude hold and navigation.</li>
+            <li>Communication Radios: Enables communication with air traffic control and other aircraft.</li>
+            <li>Navigation Systems: Includes GPS, compass, and mapping systems.</li>
+            <li>Warning and Alert Systems: Provides alerts for critical system failures, such as engine oil pressure or transmission temperature</li>
+            </ul>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown('ACCKDropdown')">All Components</button>
+        <div class="dropdown-content" id="ACCKDropdown">
+          <ol type="1">
+            <li>Overhead Switch Panel</li>
+            <li>Free Air Temperature Gauge</li>
+            <li>Windshield Wiper</li>
+            <li>Parking Brake Handle</li>
+            <li>Windshield</li>
+            <li>Instrument Panel</li>
+            <li>Pilot Wheel Brakes Pedals</li>
+            <li>Pilot Pitch-Roll Control Stick</li>
+            <li>Ignition Lock Switch</li>
+            <li>Pilot Thrust Control Rod</li>
+            <li>Lower Console</li>
+            <li>Horizontal Seat Adjust Lever</li>
+            <li>Vertical Seat Adjust Lever</li>
+            <li>Safety Belt</li>
+            <li>Shoulder Harness</li>
+            <li>Pilot Seat</li>
+            <li>Rotational Seat Adjust Lever</li>
+            <li>Co-pilot Thrust Control Rod</li>
+            <li>Inertia Reel Lock</li>
+            <li>Co-pilot Pitch-Roll Control</li>
+            <li>Co-pilot Wheel Brakes Pedals</li>
+            <li>Magnetic Compass</li>
+            <li>Engine Topping Stop Stud</li>
+            <li>Longitudinal Stick Indicator</li>
+            <li>Pilot's Foot Switch</li>
+            <li>Co-pilot's Foot Switch</li>
+          </ol>
+        </div>
+        </div>    
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab3">
+  <h2>Class 8th Computer Project</h2>
+  <h3>Topic - Automobiles</h3>
+  <h3> </h3>
+  <h4>Leaders</h4>
+    <ul>
+      <li>Afiyah Khan</li>
+      <li>Shubhra Patil</li>
+    </ul>
+  <h4>Members</h4>
+    <ul>
+      <li>Aashi Shahu</li>
+      <li>Dhiraj -</li>
+      <li>Kavyansh Kalla</li>
+      <li>Samiksh Kumari</li>
+    </ul>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
