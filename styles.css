@@ -1,128 +1,138 @@
 .tabs {
-  display: flex;
-  cursor: pointer;
-}
-.tab {
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  background: #f1f1f1;
-}
-.tab.active {
-  background: #fff;
-  font-weight: bold;
-}
-.tab-content {
-  display: none;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-.tab-content.active {
-  display: block;
-}
-
-/* Responsive Images */
-img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.1s ease;
-}
-img:hover {
-  transform: scale(1.06);
-}
-
-/* Responsive Parents and Figures */
-#parent {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-figure {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Responsive Dropdowns */
-.dropdown {
-  margin: 20px;
-  font-family: Arial, sans-serif;
-  width: 100%;
-}
-
-.dropdown-button {
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  border: 1px solid #000000;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.dropdown-button:focus {
-  outline: none;
-}
-
-.dropdown-content {
-  display: none;
-  margin-top: 5px;
-  padding: 15px;
-  border: 0px;
-  border-radius: 2px;
-  background-color: white;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.dropdown-content p {
-  margin: 0;
-}
-
-.dropdown-content.visible {
-  display: block;
-}
-
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-  .tabs {
-    flex-direction: row;
+    display: flex;
+    cursor: pointer;
   }
-  
   .tab {
-    width: 100%;
-    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #f1f1f1;
+  }
+  .tab.active {
+    background: #fff;
+    font-weight: bold;
+  }
+  .tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .tab-content.active {
+    display: block;
   }
   
+  /* Responsive Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.1s ease;
+  }
+  img:hover {
+    transform: scale(1.06);
+  }
+
+  .img2 {
+    max-width: 100%;
+    height: auto;
+    transition: none;
+  }
+
+  .img2:hover {
+    transform: none;
+  }
+  
+  /* Responsive Parents and Figures */
   #parent {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   
   figure {
-    width: 90%;
-    margin: 10px 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tab-content {
-    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
+  /* Responsive Dropdowns */
   .dropdown {
-    margin: 10px 0;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
   }
   
   .dropdown-button {
-    font-size: 14px;
-    padding: 8px 15px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
-}
+  
+  .dropdown-button:focus {
+    outline: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    margin-top: 5px;
+    padding: 15px;
+    border: 0px;
+    border-radius: 2px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .dropdown-content p {
+    margin: 0;
+  }
+  
+  .dropdown-content.visible {
+    display: block;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .tabs {
+      flex-direction: row;
+    }
+    
+    .tab {
+      width: 100%;
+      text-align: center;
+    }
+    
+    #parent {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    figure {
+      width: 90%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tab-content {
+      padding: 10px;
+    }
+    
+    .dropdown {
+      margin: 10px 0;
+    }
+    
+    .dropdown-button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }

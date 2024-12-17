@@ -69,7 +69,7 @@
       <button class="dropdown-button" onclick="toggleDropdown('Helicopterdropdown')"><h2 id="halicopter">Helicopter</h2></button>
       <div class="dropdown-content" id="Helicopterdropdown">
     <p>A helicopter is a highly sophisticated rotary-wing aircraft designed for vertical takeoff, hovering, and landing. This unique ability allows helicopters to operate in confined spaces and challenging environments, making them indispensable in both military and civilian aviation sectors. Their distinctive design, featuring rotating main rotors for lift and anti-torque systems for stability, provides exceptional maneuverability that fixed-wing aircraft cannot match.</p>
-    <img src="https://www.researchgate.net/profile/Alexandre-C-B-Ramos/publication/281503119/figure/fig2/AS:574788801437696@1514051737145/The-helicopter-structure.png" alt="Helicopter" style="width: 400px; height: auto; border: 1px solid #000;">
+    <img src="https://www.researchgate.net/profile/Alexandre-C-B-Ramos/publication/281503119/figure/fig2/AS:574788801437696@1514051737145/The-helicopter-structure.png" class="img2" alt="Helicopter" style="width: 400px; height: auto; border: 1px solid #000;">
     <div class="dropdown">
         <!--anon did alot:) but no credit:(-->
       <button class="dropdown-button" onclick="toggleDropdown('historyDropdown')">History</button>
@@ -121,7 +121,7 @@
         <button class="dropdown-button" onclick="toggleDropdown('ConsistsMRDropdown')">Consists</button>
         <div class="dropdown-content" id="ConsistsMRDropdown">
           <!--didn't even have responsiveness so didn't work on phones-->
-            <img src="https://www.researchgate.net/profile/Akeel-Wannas/publication/303881525/figure/fig2/AS:670015258902540@1536755494926/Figure-12-Mechanical-view-of-the-rotor-shaft-main-rotor-assembly.png" alt="Main rotor" style="width: 350px; height: auto;">
+            <img src="https://www.researchgate.net/profile/Akeel-Wannas/publication/303881525/figure/fig2/AS:670015258902540@1536755494926/Figure-12-Mechanical-view-of-the-rotor-shaft-main-rotor-assembly.png" class="img2" alt="Main rotor" style="width: 350px; height: auto;">
             <ul type="disc">
                 <li>Multiple rotor blades, typically manufactured from composite materials or metal alloys</li>
                 <li> A central hub, connecting the rotor blades to the mast</li>
@@ -146,7 +146,7 @@
    <div class="dropdown">
     <button class="dropdown-button" onclick="toggleDropdown('EngineDropdown')"><h3 id="Engine">Engine</h3></button>
     <div class="dropdown-content" id="EngineDropdown">
-        <img src="https://www.chinook-helicopter.com/standards/areas/Drawings/Engine/L-712/L-712_Engine_Cross_Section_1_Bit_700x531.jpg" alt="Landing skid" style="width: 300px; height: auto; border: 1px solid #000;">
+        <img src="https://www.chinook-helicopter.com/standards/areas/Drawings/Engine/L-712/L-712_Engine_Cross_Section_1_Bit_700x531.jpg" class="img2" alt="Landing skid" style="width: 300px; height: auto; border: 1px solid #000;">
         <ul type="disc">
             <li>Rotor diameter: influences lift generation and overall efficiency</li>
             <li>Rotor rotational speed (RPM): impacts lift production and aircraft performance</li>
@@ -209,6 +209,79 @@
 </div>
 </div>
 <div class="dropdown">
+  <button class="dropdown-button" onclick="toggleDropdown('CockpitDropdown')"><h3 id="CK">Cockpit</h3></button>
+  <div class="dropdown-content" id="CockpitDropdown">
+      <p>The cockpit is the central control center of a helicopter, housing the instruments, controls, and displays necessary for safe and efficient flight. A typical helicopter cockpit features:.</p>
+      <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('IPCPDropdown')">Instrument Panel</button>
+      <div class="dropdown-content" id="IPCPDropdown">
+        <ul type="disc">
+          <li>Primary Flight Display (PFD): Shows critical flight information, such as altitude, airspeed, and heading.</li>
+          <li>Multifunction Display (MFD): Displays navigation, engine, and system data.</li>
+          <li>Attitude Indicator: Displays the helicopter's attitude and orientation.</li>
+          <li>Altimeter: Shows the helicopter's altitude above sea level.</li>
+          <li>Airspeed Indicator: Displays the helicopter's airspeed.</li>
+        </ul>
+          </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('CCKDropdown')">Controls</button>
+      <div class="dropdown-content" id="CCKDropdown">
+        <ul type="disc">
+          <li>Cyclic Stick: Controls the helicopter's pitch, roll, and yaw.</li>
+          <li>Collective Stick: Controls the helicopter's altitude and climb/descent rate.</li>
+          <li>Throttle: Controls the engine's power output.</li>
+          <li>Rudder Pedals: Controls the helicopter's yaw.</li>
+          </ul>
+      </div>
+      </div>
+      <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('AFCKDropdown')">Additional features</button>
+      <div class="dropdown-content" id="AFCKDropdown">
+        <ul type="disc">
+          <li>Autopilot System: Automates certain flight functions, such as altitude hold and navigation.</li>
+          <li>Communication Radios: Enables communication with air traffic control and other aircraft.</li>
+          <li>Navigation Systems: Includes GPS, compass, and mapping systems.</li>
+          <li>Warning and Alert Systems: Provides alerts for critical system failures, such as engine oil pressure or transmission temperature</li>
+          </ul>
+      </div>
+      </div>
+      <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('ACCKDropdown')">All Components</button>
+      <div class="dropdown-content" id="ACCKDropdown">
+        <ol type="1">
+          <li>Overhead Switch Panel</li>
+          <li>Free Air Temperature Gauge</li>
+          <li>Windshield Wiper</li>
+          <li>Parking Brake Handle</li>
+          <li>Windshield</li>
+          <li>Instrument Panel</li>
+          <li>Pilot Wheel Brakes Pedals</li>
+          <li>Pilot Pitch-Roll Control Stick</li>
+          <li>Ignition Lock Switch</li>
+          <li>Pilot Thrust Control Rod</li>
+          <li>Lower Console</li>
+          <li>Horizontal Seat Adjust Lever</li>
+          <li>Vertical Seat Adjust Lever</li>
+          <li>Safety Belt</li>
+          <li>Shoulder Harness</li>
+          <li>Pilot Seat</li>
+          <li>Rotational Seat Adjust Lever</li>
+          <li>Co-pilot Thrust Control Rod</li>
+          <li>Inertia Reel Lock</li>
+          <li>Co-pilot Pitch-Roll Control</li>
+          <li>Co-pilot Wheel Brakes Pedals</li>
+          <li>Magnetic Compass</li>
+          <li>Engine Topping Stop Stud</li>
+          <li>Longitudinal Stick Indicator</li>
+          <li>Pilot's Foot Switch</li>
+          <li>Co-pilot's Foot Switch</li>
+        </ol>
+      </div>
+      </div>    
+</div>
+</div>
+<div class="dropdown">
     <button class="dropdown-button" onclick="toggleDropdown('LandingSkidDropdown')"><h3 id="Ls">Landing Skid</h3></button>
     <div class="dropdown-content" id="LandingSkidDropdown">
         <p>The landing skid is a vital structural element of a helicopter, providing a stable and durable platform for landing and takeoff operations.</p>
@@ -235,77 +308,96 @@
         </div>
 </div>
 </div>
+
 <div class="dropdown">
-    <button class="dropdown-button" onclick="toggleDropdown('CockpitDropdown')"><h3 id="CK">Cockpit</h3></button>
-    <div class="dropdown-content" id="CockpitDropdown">
-        <p>The cockpit is the central control center of a helicopter, housing the instruments, controls, and displays necessary for safe and efficient flight. A typical helicopter cockpit features:.</p>
-        <div class="dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown('IPCPDropdown')">Instrument Panel</button>
-        <div class="dropdown-content" id="IPCPDropdown">
-          <ul type="disc">
-            <li>Primary Flight Display (PFD): Shows critical flight information, such as altitude, airspeed, and heading.</li>
-            <li>Multifunction Display (MFD): Displays navigation, engine, and system data.</li>
-            <li>Attitude Indicator: Displays the helicopter's attitude and orientation.</li>
-            <li>Altimeter: Shows the helicopter's altitude above sea level.</li>
-            <li>Airspeed Indicator: Displays the helicopter's airspeed.</li>
-          </ul>
-            </div>
-            </div>
-            <div class="dropdown">
-            <button class="dropdown-button" onclick="toggleDropdown('CCKDropdown')">Controls</button>
-        <div class="dropdown-content" id="CCKDropdown">
-          <ul type="disc">
-            <li>Cyclic Stick: Controls the helicopter's pitch, roll, and yaw.</li>
-            <li>Collective Stick: Controls the helicopter's altitude and climb/descent rate.</li>
-            <li>Throttle: Controls the engine's power output.</li>
-            <li>Rudder Pedals: Controls the helicopter's yaw.</li>
-            </ul>
-        </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-button" onclick="toggleDropdown('AFCKDropdown')">Additional features</button>
-        <div class="dropdown-content" id="AFCKDropdown">
-          <ul type="disc">
-            <li>Autopilot System: Automates certain flight functions, such as altitude hold and navigation.</li>
-            <li>Communication Radios: Enables communication with air traffic control and other aircraft.</li>
-            <li>Navigation Systems: Includes GPS, compass, and mapping systems.</li>
-            <li>Warning and Alert Systems: Provides alerts for critical system failures, such as engine oil pressure or transmission temperature</li>
-            </ul>
-        </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-button" onclick="toggleDropdown('ACCKDropdown')">All Components</button>
-        <div class="dropdown-content" id="ACCKDropdown">
-          <ol type="1">
-            <li>Overhead Switch Panel</li>
-            <li>Free Air Temperature Gauge</li>
-            <li>Windshield Wiper</li>
-            <li>Parking Brake Handle</li>
-            <li>Windshield</li>
-            <li>Instrument Panel</li>
-            <li>Pilot Wheel Brakes Pedals</li>
-            <li>Pilot Pitch-Roll Control Stick</li>
-            <li>Ignition Lock Switch</li>
-            <li>Pilot Thrust Control Rod</li>
-            <li>Lower Console</li>
-            <li>Horizontal Seat Adjust Lever</li>
-            <li>Vertical Seat Adjust Lever</li>
-            <li>Safety Belt</li>
-            <li>Shoulder Harness</li>
-            <li>Pilot Seat</li>
-            <li>Rotational Seat Adjust Lever</li>
-            <li>Co-pilot Thrust Control Rod</li>
-            <li>Inertia Reel Lock</li>
-            <li>Co-pilot Pitch-Roll Control</li>
-            <li>Co-pilot Wheel Brakes Pedals</li>
-            <li>Magnetic Compass</li>
-            <li>Engine Topping Stop Stud</li>
-            <li>Longitudinal Stick Indicator</li>
-            <li>Pilot's Foot Switch</li>
-            <li>Co-pilot's Foot Switch</li>
-          </ol>
-        </div>
-        </div>    
+  <button class="dropdown-button" onclick="toggleDropdown('wiafDropdown')"><h3>Women in the Indian Airforce</h3></button>
+  <div class="dropdown-content" id="wiafDropdown">
+      <p>Women in the Indian Air Force (IAF) have made significant contributions across various fields, excelling in both technical and operational roles. Over time, they have shattered stereotypes and proven their capabilities in high-pressure environments, including flying combat aircraft, commanding units, and managing critical operational tasks. Today, women officers in the IAF serve in a range of roles, including piloting fighter jets, handling air traffic control, and providing essential medical support, continuing to inspire future generations with their dedication and achievements.</p>
+      <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('InductionDropdown')">Induction</button>
+      <div class="dropdown-content" id="InductionDropdown">
+          <p>Women were first inducted into the Indian Air Force (IAF) in 1993, initially in non-combat roles such as administration and logistics.</p>
+          </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('FBDropdown')">Flying Branch</button>
+      <div class="dropdown-content" id="FBDropdown">
+        <p>In 1994, women were allowed to join as pilots, becoming the first female officers in flying roles.</p>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('CRDropdown')">Combat Roles</button>
+    <div class="dropdown-content" id="CRDropdown">
+      <p>In 2016, the IAF opened combat roles for women, allowing them to serve as fighter pilots, a significant step for gender inclusion.</p>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('NFDropdown')">Notable Figures</button>
+  <div class="dropdown-content" id="NFDropdown">
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown('SDDropdown')">Shaliza Dhami</button>
+  <div class="dropdown-content" id="SDDropdown">
+      <ul>
+        <li>Wing Commander</li>
+        <li>The first female officer to command a fighter squadron.</li>
+      </ul>
+      <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/stories/2023_03/story_25609/assets/8.jpeg?time=1678359916" class="img2" alt="Shaliza Dhami" style="width: 250px; height: auto;">
+  </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('GSDropdown')">Gunjan Saxena</button>
+<div class="dropdown-content" id="GSDropdown">
+    <ul>
+      <li>Flight Lieutenant</li>
+      <li>The first woman to serve in combat during the Kargil War in 1999.</li>
+    </ul>
+    <img src="https://www.indianyouth.net/wp-content/uploads/2017/12/Gunjan-Saxena-the-first-ever-Indian-woman-to-fly-into-a-combat-zone.jpg" class="img2" alt="Gunjan Saxena" style="width: 250px; height: auto;">
+</div>
+</div>
+<div class="dropdown">
+  <button class="dropdown-button" onclick="toggleDropdown('ACDropdown')">Avani Chaturvedi</button>
+<div class="dropdown-content" id="ACDropdown">
+  <ul>
+    <li>Squadron Leader</li>
+    <li>The first Indian woman to fly a fighter jet solo, flying a MiG-21 in 2018.</li>
+  </ul>
+  <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2023/01/08/7c51a5a1f147e49d83ca42d7361dd73a144eb.jpg" alt="Avani Chaturvedi" class="img2" style="width: 250px; height: auto;">
+</div>
+</div>
+<div class="dropdown">
+  <button class="dropdown-button" onclick="toggleDropdown('HKDDropdown')">Harita Kaur Dayal</button>
+<div class="dropdown-content" id="HKDDropdown">
+  <ul>
+    <li>Flight Lieutenant</li>
+    <li>The first woman pilot in the IAF to fly a MiG-21, a significant achievement in 2003.</li>
+  </ul>
+  <img src="https://pbs.twimg.com/media/EvsxRrZUcAEf3D1.jpg" class="img2" alt="Harita Kaur Dayal" style="width: 250px; height: auto;">
+</div>
+</div>
+<div class="dropdown">
+  <button class="dropdown-button" onclick="toggleDropdown('BKDropdown')">Bhawana Kanth</button>
+<div class="dropdown-content" id="BKDropdown">
+  <ul>
+    <li>Flight Lieutenant</li>
+    <li>One of the first women fighter pilots to fly a combat sortie in a MiG-21 during her training.</li>
+  </ul>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Bhawana_Kanth_in_2020.jpg" class="img2" alt="Bhawana Kanth" style="width: 250px; height: auto;">
+</div>
+</div>
+  </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown('CRSDropdown')">Current Roles</button>
+<div class="dropdown-content" id="CRSDropdown">
+  <p>Women serve in various roles, including as pilots (both transport and fighter), in technical branches (engineering, air traffic control), and in leadership, administrative, and medical positions.</p>
+</div>
+</div>
+<div class="dropdown">
+  <button class="dropdown-button" onclick="toggleDropdown('PDropdown')">Progress</button>
+  <div class="dropdown-content" id="PDropdown">
+    <p>Women have steadily advanced through the ranks, with increasing opportunities in all branches of the IAF, and continue to contribute significantly to its operations and development.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
